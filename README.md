@@ -3,22 +3,20 @@
 <details>
 <summary>HOW TO USE </summary>
 	
-<details>
-	<summary>Setup</summary>
+
 	set the skin unity model as a trigger object
 	create an cube and attatch the script to it, these will act as colliders,also add rigid body or ontrigger will not work
-</details>
-	<details>
-	<summary>APPLY COLLDIERS </summary>
-	 place the colliders onto the surface of the unity probe and then parent them to it 
 
-	Im unsure if the probe is flat or rounded if its flat 1 ray is proabably enough even forwide models if its roudned you may need a few rays
+	
+	#APPLY COLLDIERS 
+	- place the colliders onto the surface of the unity probe and then parent them to it 
+
+	- Im unsure if the probe is flat or rounded if its flat 1 ray is proabably enough even forwide models if its roudned you may need a few rays
 
 	If you do need multiple rays i could write an external script that takes in all of the distances and then averages them by adding them and dividng by 
 	the number of objects collided
-	</details>
-	<details>
-	<summary>Pressure handling </summary>
+	
+	
 	when the probe makes contact it will return the distance between the closest surface point on the skin to the current object location
 	to get the pressure you would multiply this distance by the compression ratio of the balistic gel
 		
@@ -26,7 +24,7 @@
 	you could proably find the compression ratio by using one of your force probes and mesuring how much force it takes to push in 1cm or you may have been given those stats when you bought the gel
 		
 	i would assume that probes with larger surface area would have higher compression ratios so you may have to do the test with each probe
-	</details>
+	
 </details>
   
 
