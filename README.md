@@ -1,7 +1,9 @@
 # UltraSoundRaycastCollision
 ![33YGannetGROUNDUP_-_SampleScene_-_Windows,_Mac,_Linux_-_Uni24_05_2022](https://user-images.githubusercontent.com/89361982/170090687-8fe135b4-aca4-4072-bc68-361561659832.gif)
 <details>
-<summary>HOW TO USE </summary>
+<summary>
+## HOW TO USE 
+</summary>
 
 ### SETUP
 - set the skin unity model as a trigger object
@@ -30,7 +32,9 @@ you could proably find the compression ratio by using one of your force probes a
 
 
 <details>
-<summary>Inspector Options </summary>
+<summary>
+## INSPECTOR OPTIONS
+</summary>
 	
 ### EDITABLE
 - DEFAULT ORGIN AND LOOKAT CAN BE CHANGED BY USER THROUGH THE INSPECTOR
@@ -46,24 +50,26 @@ you could proably find the compression ratio by using one of your force probes a
 </details>	
 
 <details>
-<summary>code explanation </summary>
-- FIRST WE DEFINE TWO COORDINATES IN the LOCAL SPACE OF THE cube
-- THESE ARE OUR RAY ORGIN AND RAY LOOKAT
+<summary>
+## CODE EXPLINATIONS 
+</summary>
+
 	
-### BY DEFAULT 
+### RAY
+- We define the ray in local coordinats then convert them to global so that the ray is locked to the cubes axis
+-
+- by default
 - the origin is set to 0,0,-1 so right behind the object
 - ray lookat is set to 0,0,0.5 so the center of object
-### EXPLANATION
+### WHY
 - unity cannot detect back faces on convex objects even with Physics.queriesHitBackfaces
 - because the probe will be inside of the skin mesh when pressed in we cannot shoot a ray from insid because it will hit a backface and not register
-- to fix this we have to set the orgin of the ray to outside of the skin object this is why the default orgin is outside of the cube and lookat is inside the cube
-- I imagine the ray_orgin to act simlar to max distance the maximum amount you believe you will push into the balistic gel but you can set this to any value and i dont believe it will effect anything
-- ray lookat is  the first surface of collision the reason its set to 0.5 is because thats the default  z distance of a box colider on a new cube
-- if you change the z dimensions of the box colider you should also change the ray lookat coordinate to match
-- alternativley you could also call the raycast function in an update and ignore collisions entirley and just work off of the raycast collsion but this would likley be less efficient because it runs even when no colision occurs
-### CONVERT TO WORLD COORDINATES
-- Local coordinates will follow rotation of the cube so you wil be able to change the direction of the ray by simply rotating the object
-- IT TRANSFORMS THE POINTS INTO WORLD COORDINATES USING TRANSFORMpoint function
+- to fix this we have to set the orgin of the ray to outside of the skin object and shoot inwards in the same direction as if we shot outwards this is why the default orgin is outside of the cube and lookat is inside the cube
+- I imagine the ray_orgin to act simlar to max distance, the maximum amount you believe you will push into the balistic gel but you can set this to any value and i dont believe it will effect anything as long as its starts outside of the the skin
+- ray lookat is  the first surface of collision the reason its set to 0.5 by default is because thats the default  z distance of a box colider on a new cube
+- alternativly you could set the collision to the orgin of the cube and use the collision box as just a trigger to activate the ray even and have them be uncoorilated
+### MISC
+- Local coordinates will follow rotation of the cube so you will be able to change the direction of the ray by simply rotating the object
 - ray_lookat-ray orgin gives you a new vector that points in the same direction as the line formed by points rayorgin to raylookat
 - to get the distance between the nearest surface point and the cube you have to use vectro3.Distance() in this case you cannot use hit.distance because the ray is on the outside of the surface	
 </details>	
