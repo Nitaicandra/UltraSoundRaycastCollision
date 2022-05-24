@@ -72,7 +72,19 @@ you could proably find the compression ratio by using one of your force probes a
 - Local coordinates will follow rotation of the cube so you will be able to change the direction of the ray by simply rotating the object
 - ray_lookat-ray orgin gives you a new vector that points in the same direction as the line formed by points rayorgin to raylookat
 - to get the distance between the nearest surface point and the cube you have to use vectro3.Distance() in this case you cannot use hit.distance because the ray is on the outside of the surface	
-</details>	
+</details>
 
+<details>
+<summary>
+### UPDATE1
+</summary>
+- ![33UConyGROUNDUP_-_SampleScene_-_Windows,_Mac,_Linux_-_Uni24_05_2022](https://user-images.githubusercontent.com/89361982/170150335-b89529a3-df3d-44b7-91c7-174583fbb424.gif)
+
+- replace ontriggerenter with a simple update only thing needed is a colider on the skin object 
+- Changed default ray orgin from 0,0,-1 to 0,-0.1,0   this causes the ray to pointing up instead of forward and shrinks the length
+- changed default lookat from 0,0,0.5 to 0,0,0 now the orgin dictates the colision point
+- confirmed works with probe with a fairly high degree of accuracy
+- suggestion use empties to place the rays ctrl shift to snap to probe colider
+</details>
 	
 	
