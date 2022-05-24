@@ -2,7 +2,7 @@
 ![33YGannetGROUNDUP_-_SampleScene_-_Windows,_Mac,_Linux_-_Uni24_05_2022](https://user-images.githubusercontent.com/89361982/170090687-8fe135b4-aca4-4072-bc68-361561659832.gif)
 - HOW TO USE
 <summary>
-
+<details>
 
 - YOU set the skin unity model as a trigger object
 - You create an cube and attatch the script to it, these will act as colliders
