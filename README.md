@@ -6,14 +6,14 @@
 - set the skin unity model as a trigger object
 - create an cube and attatch the script to it, these will act as colliders,also add rigid body or ontrigger will not work
 
-	<details>
-	<summary>APPLY COLLDIERS </summary>
+<details>
+<summary>APPLY COLLDIERS </summary>
 - place the colliders onto the surface of the unity probe and then parent them to it 
 
 	Im unsure if the probe is flat or rounded if its flat 1 ray is proabably enough even forwide models if its roudned you may need a few rays
 
 	If you do need multiple rays i could write an external script that takes in all of the distances and then averages them by adding them and dividng by the number of objects collided
-	</details>
+</details>
 	<details>
 	<summary>Pressure handling </summary>
 	when the probe makes contact it will return the distance between the closest surface point on the skin to the current object location
