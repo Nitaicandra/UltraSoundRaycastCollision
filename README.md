@@ -4,8 +4,8 @@
 <summary>HOW TO USE </summary>
 
 ### SETUP
-set the skin unity model as a trigger object
-create an cube and attatch the script to it, these will act as colliders,also add rigid body or ontrigger will not work
+- set the skin unity model as a trigger object
+- create an cube and attatch the script to it, these will act as colliders, also add rigid body or ontrigger will not work
 
 
 ### APPLY COLLDIERS 
