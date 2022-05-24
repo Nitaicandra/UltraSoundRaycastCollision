@@ -16,11 +16,11 @@
 	</details>
 	<details>
 	<summary>Pressure handling </summary>
-		- WHEN THE PROBE MAKES CONTACT it will return the distance between the closest surface point on the skin to the current object location
-		- to get the pressure you would multiply this distance by the compression ratio of the balistic gel
-		- ie if it takes 10 grams to push the probe 1cm into the gel then you would multiply the distance by 10 to get the pressure
-		- you could proably find the compression ratio by using one of your force probes and mesuring how much force it takes to push in 1cm or you may have been given those stats when you bought the gel
-		- i would assume that probes with larger surface area would have higher compression ratios so you may have to do the test with each probe
+	WHEN THE PROBE MAKES CONTACT it will return the distance between the closest surface point on the skin to the current object location
+	to get the pressure you would multiply this distance by the compression ratio of the balistic gel
+	ie if it takes 10 grams to push the probe 1cm into the gel then you would multiply the distance by 10 to get the pressure
+	you could proably find the compression ratio by using one of your force probes and mesuring how much force it takes to push in 1cm or you may have been given those stats when you bought the gel
+	i would assume that probes with larger surface area would have higher compression ratios so you may have to do the test with each probe
 	</details>
 </details>
   
