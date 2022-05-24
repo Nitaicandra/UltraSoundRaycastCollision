@@ -1,8 +1,9 @@
 # UltraSoundRaycastCollision
 ![33YGannetGROUNDUP_-_SampleScene_-_Windows,_Mac,_Linux_-_Uni24_05_2022](https://user-images.githubusercontent.com/89361982/170090687-8fe135b4-aca4-4072-bc68-361561659832.gif)
-- HOW TO USE 
-<summary>
 <details>
+<summary>HOW TO USE </summary>
+
+
 
 - YOU set the skin unity model as a trigger object
 - You create an cube and attatch the script to it, these will act as colliders
@@ -19,6 +20,5 @@
 	- you could proably find the compression ratio by using one of your force probes and mesuring how much force it takes to push in 1cm or you may have been given those stats when you bought the gel
 	- i would assume that probes with larger surface area would have higher compression ratios so you may have to do the test with each probe
   
+<details>
 
-
-</summary>
