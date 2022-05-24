@@ -17,7 +17,7 @@
 - i would assume that probes with larger surface area would have higher compression ratios so you may have to do the test with each probe
 
   
-<details>
+
 
 <details>
 <summary>Inspector Options </summary>
