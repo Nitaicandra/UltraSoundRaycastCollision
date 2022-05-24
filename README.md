@@ -2,12 +2,14 @@
 ![33YGannetGROUNDUP_-_SampleScene_-_Windows,_Mac,_Linux_-_Uni24_05_2022](https://user-images.githubusercontent.com/89361982/170090687-8fe135b4-aca4-4072-bc68-361561659832.gif)
 <details>
 <summary>HOW TO USE </summary>
+<details>
 - YOU set the skin unity model as a trigger object
+<details>
 - You create an cube and attatch the script to it, these will act as colliders
 	- also add rigid body or ontrigger will not work
 - you place the colliders onto the surface of the unity probe and then parent them to it
 	- from my understanding the probe is either squareish or circlish with a flatish top so i dont think you would need more then 4 ray objects and you may be able to get away with one because from my undnerstanding even though the tip may be wide you will generally have it flat on the surface but i might be wrong on that
-		- ![33VKaguUntitled_-_Paint24_05_2022.png](../assets/33VKaguUntitled_-_Paint24_05_2022_1653401725934_0.png)
+	
 	- If you do need multiple rays i could write an external script that takes in all of the distances and then averages them by adding them and dividng by the number of objects collided
 	-
 - THEN WHEN THE PROBE MAKES CONTACT it will return the distance between the closest surface point on the skin to the current object location
