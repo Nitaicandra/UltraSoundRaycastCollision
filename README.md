@@ -3,18 +3,23 @@
 <details>
 <summary>HOW TO USE </summary>
 
-- YOU set the skin unity model as a trigger object
-- You create an cube and attatch the script to it, these will act as colliders,also add rigid body or ontrigger will not work
+- set the skin unity model as a trigger object
+- create an cube and attatch the script to it, these will act as colliders,also add rigid body or ontrigger will not work
 
-- you place the colliders onto the surface of the unity probe and then parent them to it
-- from my understanding the probe end is flat and generally you want to lay them flat to get a reeding so im i think one ray in the midle of the object would work even with very wide probes becaus in the situation of you not laying it flat then i would assume you wouldnt get 
+<details>
+<summary>APPLY COLLDIERS </summary>
+- place the colliders onto the surface of the unity probe and then parent them to it 
+- Im unsure if the probe is flat or rounded if its flat 1 ray is proabably enough even forwide models if its roudned you may need a few rays
 - If you do need multiple rays i could write an external script that takes in all of the distances and then averages them by adding them and dividng by the number of objects collided
-
+</details>
+<details>
+	<summary>Pressure handling </summary>
 - WHEN THE PROBE MAKES CONTACT it will return the distance between the closest surface point on the skin to the current object location
 - to get the pressure you would multiply this distance by the compression ratio of the balistic gel
 - ie if it takes 10 grams to push the probe 1cm into the gel then you would multiply the distance by 10 to get the pressure
 - you could proably find the compression ratio by using one of your force probes and mesuring how much force it takes to push in 1cm or you may have been given those stats when you bought the gel
 - i would assume that probes with larger surface area would have higher compression ratios so you may have to do the test with each probe
+</details>
 </details>
   
 
@@ -22,6 +27,7 @@
 <details>
 <summary>Inspector Options </summary>
 EDITABLE
+	
 - DEFAULT ORGIN AND LOOKAT CAN BE CHANGED BY USER THROUGH THE INSPECTOR
 - YOU CAN CHANGE THE axis to point in a diffrent direction if you want, by default its pointin in the z direction
 - LAYER MASK CAN ALSO BE CHANGED THROUGH THE INSPECTOR
