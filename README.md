@@ -3,11 +3,11 @@
 <details>
 <summary>HOW TO USE </summary>
 	
-	<details>
+<details>
 	<summary>Setup</summary>
-	- set the skin unity model as a trigger object
-	- create an cube and attatch the script to it, these will act as colliders,also add rigid body or ontrigger will not work
-	</details>
+	set the skin unity model as a trigger object
+	create an cube and attatch the script to it, these will act as colliders,also add rigid body or ontrigger will not work
+</details>
 	<details>
 	<summary>APPLY COLLDIERS </summary>
 	 place the colliders onto the surface of the unity probe and then parent them to it 
