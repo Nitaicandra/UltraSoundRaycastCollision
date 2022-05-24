@@ -78,7 +78,7 @@ you could proably find the compression ratio by using one of your force probes a
 <summary>
 ### UPDATE1
 </summary>
-- ![33UConyGROUNDUP_-_SampleScene_-_Windows,_Mac,_Linux_-_Uni24_05_2022](https://user-images.githubusercontent.com/89361982/170150335-b89529a3-df3d-44b7-91c7-174583fbb424.gif)
+![33UConyGROUNDUP_-_SampleScene_-_Windows,_Mac,_Linux_-_Uni24_05_2022](https://user-images.githubusercontent.com/89361982/170150335-b89529a3-df3d-44b7-91c7-174583fbb424.gif)
 
 - replace ontriggerenter with a simple update only thing needed is a colider on the skin object 
 - Changed default ray orgin from 0,0,-1 to 0,-0.1,0   this causes the ray to pointing up instead of forward and shrinks the length
