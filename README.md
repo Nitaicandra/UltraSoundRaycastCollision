@@ -3,13 +3,10 @@
 <details>
 <summary>HOW TO USE </summary>
 
-
-
 - YOU set the skin unity model as a trigger object
-- You create an cube and attatch the script to it, these will act as colliders
-	
+<summary>You create an cube and attatch the script to it, these will act as colliders</summary>
 	- also add rigid body or ontrigger will not work
-- you place the colliders onto the surface of the unity probe and then parent them to it
+<summary> you place the colliders onto the surface of the unity probe and then parent them to it</summary>
 	- from my understanding the probe is either squareish or circlish with a flatish top so i dont think you would need more then 4 ray objects and you may be able to get away with one because from my undnerstanding even though the tip may be wide you will generally have it flat on the surface but i might be wrong on that
 		
 	- If you do need multiple rays i could write an external script that takes in all of the distances and then averages them by adding them and dividng by the number of objects collided
