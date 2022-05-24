@@ -51,7 +51,7 @@ you could proably find the compression ratio by using one of your force probes a
 
 <details>
 <summary>
-## CODE EXPLINATIONS 
+## CODE EXPLANATIONS 
 </summary>
 
 	
