@@ -76,7 +76,7 @@ you could proably find the compression ratio by using one of your force probes a
 
 <details>
 <summary>
-### UPDATE1
+### UPDATE1 , removed ontrigger , probe 3 point test
 </summary>
 
 
@@ -96,4 +96,10 @@ you could proably find the compression ratio by using one of your force probes a
 </details>
 
 ![33UConyGROUNDUP_-_SampleScene_-_Windows,_Mac,_Linux_-_Uni24_05_2022](https://user-images.githubusercontent.com/89361982/170150335-b89529a3-df3d-44b7-91c7-174583fbb424.gif)	
-	
+<details>
+<summary>
+### UPDATE2
+</summary>
+- added vein rupture detector which logs every detector that has a reading over a user defined threshold
+- raycaster objects should be tagged with raycast in order to be checked for vein collapse
+</details>
