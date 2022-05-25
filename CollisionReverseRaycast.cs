@@ -56,7 +56,7 @@ public class CollisionReverseRaycast : MonoBehaviour
             Debug.DrawLine(ray_origin, collision, color);
             collision = hit.point;
             ray_distance = Vector3.Distance(ray_lookat, collision);
-            Debug.Log("RAYCASTDISTANCE " + ray_distance);
+            // Debug.Log("RAYCASTDISTANCE " + ray_distance);
             pressure = compression_ratio * ray_distance;
 
         }
