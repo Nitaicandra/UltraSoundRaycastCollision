@@ -101,5 +101,6 @@ you could proably find the compression ratio by using one of your force probes a
 ### UPDATE2
 </summary>
 - added vein rupture detector which logs every detector that has a reading over a user defined threshold
+	
 - raycaster objects should be tagged with raycast in order to be checked for vein collapse
 </details>
