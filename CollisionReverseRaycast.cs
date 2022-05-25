@@ -6,10 +6,10 @@ public class CollisionReverseRaycast : MonoBehaviour
 {
     void Start()
     {
-      
+        
     }
-    public Vector3 default_origin = new Vector3(0f, 0f, -1f);
-    public Vector3 default_lookat = new Vector3(0f, 0f, 0.5f);
+    public Vector3 default_origin = new Vector3(0f, -0.1f, 0f);
+    public Vector3 default_lookat = new Vector3(0f, 0f, 0f);
     public float compression_ratio = 1;
     public LayerMask layer;
     public GameObject lastHit;
@@ -19,7 +19,7 @@ public class CollisionReverseRaycast : MonoBehaviour
     public float ray_length = 0;
     public float ray_distance = 0;
     public float pressure = 0;
-
+    /*
     private void OnTriggerStay(Collider other)
     {
         //Debug.Log(this.name + " Collided with " + other.name);
@@ -34,12 +34,13 @@ public class CollisionReverseRaycast : MonoBehaviour
         pressure = 0;
             
     }
-    /*
+    */
+    
     void Update()
     {
         raycast();
     }
-    */
+    
     void raycast()
     {
 
@@ -59,12 +60,20 @@ public class CollisionReverseRaycast : MonoBehaviour
             pressure = compression_ratio * ray_distance;
 
         }
-        else { Debug.DrawLine(ray_origin, ray_lookat, color); }
+        else { 
+            Debug.DrawLine(ray_origin, ray_lookat, color);
+            ray_length = 0;
+            ray_distance = 0;
+            pressure = 0;
+
+        }
     }
+    /*
     void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(collision, 0.2f);
     }
-
+    */
 }
+
