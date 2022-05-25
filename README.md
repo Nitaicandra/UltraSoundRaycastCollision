@@ -83,8 +83,8 @@ you could proably find the compression ratio by using one of your force probes a
 - replace ontriggerenter with a simple update only thing needed is a colider on the skin object 
 - Changed default ray orgin from 0,0,-1 to 0,-0.1,0   this causes the ray to pointing up instead of forward and shrinks the length
 - changed default lookat from 0,0,0.5 to 0,0,0 now the orgin dictates the colision point
-- confirmed works with probe with a fairly high degree of accuracy
-- suggestion use empties to place the rays ctrl shift to snap to probe colider
+- seems to work with fairly well when parenting to the probe
+- i suggest using empties as the ray object and using ctrl shift to snap to probe colider
 </details>
 
 ![33UConyGROUNDUP_-_SampleScene_-_Windows,_Mac,_Linux_-_Uni24_05_2022](https://user-images.githubusercontent.com/89361982/170150335-b89529a3-df3d-44b7-91c7-174583fbb424.gif)	
