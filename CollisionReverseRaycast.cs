@@ -34,7 +34,7 @@ public class CollisionReverseRaycast : MonoBehaviour
     */
     void Start()
     {
-        this.gameObject.tag = "raycaster";
+        //this.gameObject.tag = "raycaster";
         layer = LayerMask.GetMask("Skin");
     }
     void Update()
