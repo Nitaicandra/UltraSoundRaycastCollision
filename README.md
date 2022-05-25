@@ -74,7 +74,6 @@ you could proably find the compression ratio by using one of your force probes a
 - to get the distance between the nearest surface point and the cube you have to use vectro3.Distance() in this case you cannot use hit.distance because the ray is on the outside of the surface	
 </details>
 
-![33UConyGROUNDUP_-_SampleScene_-_Windows,_Mac,_Linux_-_Uni24_05_2022](https://user-images.githubusercontent.com/89361982/170150335-b89529a3-df3d-44b7-91c7-174583fbb424.gif)
 <details>
 <summary>
 ### UPDATE1
@@ -87,5 +86,6 @@ you could proably find the compression ratio by using one of your force probes a
 - confirmed works with probe with a fairly high degree of accuracy
 - suggestion use empties to place the rays ctrl shift to snap to probe colider
 </details>
-	
+
+![33UConyGROUNDUP_-_SampleScene_-_Windows,_Mac,_Linux_-_Uni24_05_2022](https://user-images.githubusercontent.com/89361982/170150335-b89529a3-df3d-44b7-91c7-174583fbb424.gif)	
 	
