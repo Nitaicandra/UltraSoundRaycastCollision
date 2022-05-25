@@ -73,7 +73,7 @@ you could proably find the compression ratio by using one of your force probes a
 - ray_lookat-ray orgin gives you a new vector that points in the same direction as the line formed by points rayorgin to raylookat
 - to get the distance between the nearest surface point and the cube you have to use vectro3.Distance() in this case you cannot use hit.distance because the ray is on the outside of the surface	
 </details>
-
+---
 <details>
 <summary>
 ### UPDATE1 , removed ontrigger , probe 3 point test
@@ -103,5 +103,5 @@ you could proably find the compression ratio by using one of your force probes a
 	
 - added vein collapse detector which logs every detector that has a reading over a user defined threshold
 - raycaster objects should be tagged with raycast in order to be checked for vein collapse
-- added skin layermask and tags to startup function
+- added skin layermask and tags to startup function on raycast script
 </details>
