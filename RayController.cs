@@ -22,13 +22,18 @@ public class RayController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         for (int i = 0; i < script_list.Length; i++)
         {
-            if (script_list[i].pressure>pressure_threshold)
-            {
-                Debug.Log("VEIN COLLAPSED " + "Pressure " + 
-                    script_list[i].pressure + " OBJECT " + script_list[i].gameObject);
-            }
+            if (script_list[0] != null)
+            {   
+                if (script_list[i].pressure > pressure_threshold)
+                {
+                    Debug.Log("VEIN COLLAPSED " + "Pressure " +
+                        script_list[i].pressure + " OBJECT " + script_list[i].gameObject);
+                }
+            }   
+
         }
     }
 }
