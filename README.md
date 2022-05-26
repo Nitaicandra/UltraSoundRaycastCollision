@@ -110,6 +110,7 @@ you could proably find the compression ratio by using one of your force probes a
 <summary>
 ### UPDATE3 Added prefab of probe with raycasts
 </summary>
+	
 #added tag property to ray controller
 ## added prefab of 11 rays parented to key points on the probe
 - probe has ray controller script attatched rays have ray script attatched
