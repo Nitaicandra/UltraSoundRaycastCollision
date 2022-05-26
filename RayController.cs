@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class RayController : MonoBehaviour
 {
+    public string Taglookup = "raycaster";
     public GameObject[] raycasters;
     public CollisionReverseRaycast[] script_list;
-    public float pressure_threshold=0.03f;
+    public float pressure_threshold=0.003f;
     // Start is called before the first frame update
     void Start()
     {
         
-        raycasters = GameObject.FindGameObjectsWithTag("raycaster");
+        raycasters = GameObject.FindGameObjectsWithTag(Taglookup);
         script_list = new CollisionReverseRaycast[raycasters.Length];
         for(int i = 0; i< raycasters.Length;i++) {
             script_list[i] = raycasters[i].GetComponent<CollisionReverseRaycast>();
@@ -33,7 +34,6 @@ public class RayController : MonoBehaviour
                         script_list[i].pressure + " OBJECT " + script_list[i].gameObject);
                 }
             }   
-
         }
     }
 }
