@@ -106,3 +106,24 @@ you could proably find the compression ratio by using one of your force probes a
 - raycaster objects should be tagged with raycast in order to be checked for vein collapse
 - added skin layermask to start() in raycast script
 </details>
+<details>
+<summary>
+### UPDATE3 Added prefab of probe with raycasts
+</summary>
+#added tag property to ray controller
+## added prefab of 11 rays parented to key points on the probe
+- probe has ray controller script attatched rays have ray script attatched
+- has 3 up facing rays
+- 6 edge rays 3 on each side
+- 2 corner rays on +x and -x\
+## naming convention
+- (yz)or (y-z) describe tilt plane
+- center means x value = 0
+- +x means in the positve x direction of center
+- -x means in the negative x diretion of center
+## diffrences from blender
+- unity(xyz) = blender(xzy) unity y points up blender z points up
+- unity z rotation = blender 180-y rotation
+- unity x rotation = blneder 180-x rotation
+-
+</details>
