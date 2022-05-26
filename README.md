@@ -87,7 +87,7 @@ you could proably find the compression ratio by using one of your force probes a
 - i dont believe its possible to snap objects to the normal of vertices in unity so i suggest using blender to do this
 - for the probe model i would suggest using a 3 8 or 11 point ray
 ## FLOAT ARRAY if you input these switch the y and z blender has z as up by default
-- TOP [-0.022241,-0.000014,0.045321][-0.000127,-0.000014,0.045321][0.022242,-0.000014,0.045321] Rotation [0,0,0]
+- TOP [-0.022241,0,0.045321][0,0,0.045321][0.022242,0,0.045321] Rotation [0,0,0]
 - LEFT[-0.026144,0,0.043466]Rotation [-192.588,-133.125,197.012]
 - RIGHT[0.026144,0,0.043466]Rotation [-160.764,-225.04,206.249]
 - Forward[0,-0.005315,0.042514] Rotation[-118.282,-179.871,180.069]
