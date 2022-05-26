@@ -5,7 +5,7 @@ using UnityEngine;
 public class CollisionReverseRaycast : MonoBehaviour
 {
     
-    public Vector3 default_origin = new Vector3(0f, -0.1f, 0f);
+    public Vector3 default_origin = new Vector3(0f, -0.01f, 0f);
     public Vector3 default_lookat = new Vector3(0f, 0f, 0f);
     public float compression_ratio = 1;
     public LayerMask layer;
@@ -34,7 +34,7 @@ public class CollisionReverseRaycast : MonoBehaviour
     */
     void Start()
     {
-        //this.gameObject.tag = "raycaster";
+       // this.gameObject.tag = "raycaster";
         layer = LayerMask.GetMask("Skin");
     }
     void Update()
