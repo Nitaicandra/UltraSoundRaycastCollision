@@ -92,6 +92,7 @@ you could proably find the compression ratio by using one of your force probes a
 - RIGHT[0.026144,0,0.043466]Rotation [-160.764,-225.04,206.249]
 - Forward[0,-0.005315,0.042514] Rotation[-118.282,-179.871,180.069]
 - Back[0,0.005315,0.042514] Rotation[-241.432,-180,180]
+- CONVERTED FLOAT ARRAY + ROTATIONS ARE IN PREFAB NOW
 
 </details>
 
